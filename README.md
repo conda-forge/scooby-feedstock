@@ -5,7 +5,7 @@ Home: https://github.com/banesullivan/scooby/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A lightweight toolset to easily report your Python environment's package versions and hardware resources.
 
