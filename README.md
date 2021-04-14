@@ -5,9 +5,13 @@ Home: https://github.com/banesullivan/scooby/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scooby-feedstock/blob/master/LICENSE.txt)
 
 Summary: A lightweight toolset to easily report your Python environment's package versions and hardware resources.
+
+Development: https://github.com/banesullivan/scooby
+
+Documentation: https://github.com/banesullivan/scooby/blob/master/README.md
 
 Scooby has HTML formatting for Jupyter notebooks and rich text formatting for just about every other environment. We designed this module to be lightweight such that it could easily be added as a dependency to Python projects for environment reporting when debugging. Simply add scooby to your dependencies and implement a function to have scooby report on the aspects of the environment you care most about.
 
@@ -39,6 +43,7 @@ Installing `scooby` from the `conda-forge` channel can be achieved by adding `co
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `scooby` can be installed with:
@@ -109,9 +114,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
