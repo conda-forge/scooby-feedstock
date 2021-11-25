@@ -1,5 +1,5 @@
 {% set name = "scooby" %}
-{% set version = "0.5.7" %}
+{% set version = "0.5.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ae2c2b6f5f5d10adf7aaab32409028f1e28d3ce833664bdd1e8c2072e8da169a
+  sha256: 42b132f81de70c7f1bb2860d8d1b6a4bac5108b3f8779b0559129a899ef74e02
 
 build:
   number: 0
