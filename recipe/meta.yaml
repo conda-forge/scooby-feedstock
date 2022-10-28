@@ -1,5 +1,5 @@
 {% set name = "scooby" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c6536cd11b1832f22d7a0d5ed49b529b5d3c8783f9f2481b76be57e75b7781b
+  sha256: b1c0ffbae02d7a96adb7c627edbe8f24c7d28fd013ee23b2d07b951f256f1219
 
 build:
   number: 0
@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools_scm
   run:
     - python >=3.6
 
@@ -40,3 +41,4 @@ extra:
   recipe-maintainers:
     - banesullivan
     - prisae
+    - akaszynski
