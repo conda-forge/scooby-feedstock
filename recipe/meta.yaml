@@ -10,9 +10,11 @@ source:
   sha256: b1c0ffbae02d7a96adb7c627edbe8f24c7d28fd013ee23b2d07b951f256f1219
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  entry_points:
+      - scooby=scooby.__main__:main
 
 requirements:
   host:
