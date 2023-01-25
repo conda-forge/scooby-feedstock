@@ -1,5 +1,5 @@
 {% set name = "scooby" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b1c0ffbae02d7a96adb7c627edbe8f24c7d28fd013ee23b2d07b951f256f1219
+  sha256: 52014f4681bcc3295932e0f3d94b69e40e6195a6965b34e68941312ce6b636de
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
-      - scooby=scooby.__main__:main
+    - scooby=scooby.__main__:main
 
 requirements:
   host:
