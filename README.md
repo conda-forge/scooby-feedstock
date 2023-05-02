@@ -1,11 +1,11 @@
-About scooby
-============
+About scooby-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scooby-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/banesullivan/scooby/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scooby-feedstock/blob/main/LICENSE.txt)
 
 Summary: A lightweight toolset to easily report your Python environment's package versions and hardware resources.
 
