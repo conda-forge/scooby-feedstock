@@ -1,13 +1,13 @@
 {% set name = "scooby" %}
-{% set version = "0.11.2" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0575c73636ec4c2587bea1f8a038798ddcb249e02067fae897dac3bf4f4e444d
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e1eff64727b60b68634719326e220cd1ddbb299f8c073421c2abaa4f59ca5f20
 
 build:
   number: 0
