@@ -1,5 +1,5 @@
 {% set name = "scooby" %}
-{% set version = "0.12.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e1eff64727b60b68634719326e220cd1ddbb299f8c073421c2abaa4f59ca5f20
+  sha256: c4e403160b809c57bbb457d11d6cd31bd2ac8c40929febe2ac08ac865e251fb3
 
 build:
   number: 0
